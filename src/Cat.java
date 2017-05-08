@@ -19,7 +19,7 @@ public class Cat extends Animal {
 	 * Methode gibt einen Katzenlaut als String zurück.
          * @return String Katzenlaut   
 	 */
-        @Override
+        @Override //die abstrakte Methode roar aus Animal wird überschrieben.
 	public String roar() {
             String catroar = "Miauu!!";
             return catroar;
@@ -33,7 +33,7 @@ public class Cat extends Animal {
          * @param food Futter für die Katze
          * @return String Katzenlaut positiv oder negativ
 	 */
-        @Override
+        @Override //die abstrakte Methode feed aus Animal wird überschrieben.
 	public String feed(String food) {
             if (food.equals(this.getFavoriteFood())) {
                 String catpleased = "Schnurr, Schnurr, Schnurrrrr!!";
