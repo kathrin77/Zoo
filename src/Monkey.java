@@ -61,7 +61,7 @@ public class Monkey extends Animal {
          * hochgezählt.
 	 */
         public Monkey() {
-            super();
+            super(); //Konstruktor aus Animal wird aufgerufen
             monkeynumber++; // monkeynumber++ statt Methode addAMonkey()
 
 	}        
@@ -76,7 +76,7 @@ public class Monkey extends Animal {
          * @param favoriteFood Lieblingsessen des Affen
 	 */
 	public Monkey(String name, String favoriteFood) {
-            super(name, favoriteFood);
+            super(name, favoriteFood); //Konstruktor aus Animal wird aufgerufen
             monkeynumber++; //statt addAMonkey()
 	}
 
