@@ -60,7 +60,7 @@ public class Cat extends Animal {
          * der Zähler aller Katzenobjekte wird zusätzlich hochgezählt.
 	 */
         public Cat() {
-            super();
+            super(); //es wird der Standardkonstruktor aus Animal aufgerufen
             catnumber++; // Methode addACat() gelöscht, stattdessen catnumber++
 	}
 
@@ -75,7 +75,7 @@ public class Cat extends Animal {
 	 */
         
 	public Cat(String name, String favoriteFood) {
-            super(name, favoriteFood);
+            super(name, favoriteFood); //Konstruktor aus Animal
             catnumber++; //statt der Methode addACat()            
 	}
 
