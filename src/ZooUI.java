@@ -35,14 +35,13 @@ public class ZooUI {
         //Zunaechst muessen die Tier-Objekte erzeugt werden und jedes angelegte
         //Objekt gezaehlt werden.
         
-	/* 
+        /* 
         Anmerkung zu Anpassungen durch Kathrin Heim:
-        * Designschwäche 1: 
-	Keine Kapselung verwendet! Für Attribute sollten setName/setFavoriteFood 
+        Designschwäche 1: 
+        Keine Kapselung verwendet! Für Attribute sollten setName/setFavoriteFood 
         (setter-Methoden) verwendet werden, diese Klassenattribute wurden in 
-        Klasse Animal auf private gesetzt. 
-        
-        * Designschwäche 2:
+        Klasse Animal auf private gesetzt.
+        Designschwäche 2:
         Methode addAMonkey() sowie addACat() sollte direkt im Konstruktor
         umgesetzt werden, damit sie nie vergessen gehen können und die Anzahl
         Tierobjekte immer stimmt. 
@@ -58,7 +57,7 @@ public class ZooUI {
         ersterAffe = new Monkey();
         //ersterAffe.name = "Otto"; Dies ist mit Kapselung nicht möglich, aber so:
         ersterAffe.setName("Otto");
-	//ersterAffe.favoriteFood = "Bananen"; mit Kapselung so:
+        //ersterAffe.favoriteFood = "Bananen"; mit Kapselung so:
         ersterAffe.setFavoriteFood("Bananen");
         //Monkey.addAMonkey(); Dies wird im Konstruktor erledigt.
 		
